@@ -1,0 +1,10 @@
+version: "2"
+services:
+  app:
+    container_name: haskell
+    build: 
+      context: ./
+    volumes:
+      - ./code:/app
+    tty: true
+    working_dir: /app
